@@ -1,4 +1,4 @@
-FROM registry.suse.com/bci/bci-base:15.3  
+FROM registry.suse.com/bci/bci-base:15.4  
 LABEL maintainer="contact@devopscube.com" 
 RUN  zypper --non-interactive refresh && zypper --non-interactive install nginx
 COPY files/default /etc/nginx/sites-available/default
